@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>tormahiir</title>
+  <meta charset="utf-8"></meta>
+  <style type="text/css">
+
+body{
+margin: -20px auto;
+width: 60%;
+  
+text-align: right;
+}
+
+ul{
+
+  list-style: none;
+}
+
+.rasim{
+
+  width: 80px;
+  height: 60px;
+  display: block;
+}
+div#image{
+  float: right;
+
+}
+
+#korsat{
+margin-left: 50px;
+  float: left;
+}
+
+
+
+  </style>
+</head>
+<body>
+<center><h2>تورماھىرى رەسىم سۈزۈش قورالى</h2></center>
+
+</br>
+
+
+   
+    <div id="korsat">
+           <label>رەسىمنى تاللاڭ</label>
+         </br>
+           <input type="file" id="fileInput" >
+    </div>
+<div id="image">
+
+       <img src="filter_sepia.jpg"onclick="tormahiri_filter('#korsat','blur(2px)')" class="rasim">
+    <img src="filter_sepia.jpg"onclick="tormahiri_filter('#korsat','brightness(5)')" class="rasim">
+     <img src="filter_grayscale.jpg"onclick="tormahiri_filter('#korsat','invert(1)')" class="rasim">
+      <img src="filter_grayscale.jpg"onclick="tormahiri_filter('#korsat','saturate(5)')" class="rasim">
+      <img src="filter_grayscale.jpg"onclick="tormahiri_filter('#korsat','contrast(1.4)')" class="rasim">
+      <img src="filter_grayscale.jpg"onclick="tormahiri_filter('#korsat','grayscale(1)')" class="rasim">
+        <img src="filter_grayscale.jpg"onclick="tormahiri_filter('#korsat','opacity(0.15)')" class="rasim">
+
+
+
+
+
+</div>
+   
+
+
+
+
+
+<script src="tormahiri.js">
+
+</script>
+</body>
+</html>
